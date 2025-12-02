@@ -115,8 +115,7 @@ const mapDetail = ($: cheerio.Root, el: cheerio.Element) => {
 
 
 (async () => {
-  const baseUrl =
-    "https://documentation.b2c.commercecloud.salesforce.com/DOC1/topic/com.demandware.dochelp/DWAPI/scriptapi/html/api/";
+  const baseUrl = "https://salesforcecommercecloud.github.io/b2c-dev-doc/docs/current/scriptapi/html/api/";
 
   let instance = axios.create({
     timeout: 120000, //optional
@@ -267,4 +266,3 @@ const mapDetail = ($: cheerio.Root, el: cheerio.Element) => {
   progress.stop();
   finish(api);
 });
-
